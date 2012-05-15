@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Pirate Proxy</title>
+<style type="text/css">
+body {
+  background-color: #bef;
+}
+
+img {
+  float: left;
+  padding-right: 2em;
+}
+
+br {
+  clear: left;
+}
+
+.outer {
+  margin: 20%;
+  padding: 2em;
+  background: #FFF;
+}
+</style>
+	<script type="text/javascript">
+		function doclick() {
+			document.location="http://"+document.getElementById('url').value+".proxy.example.org";
+		}
+	</script>
+</head>
+<body>
+	<div class="outer">
+		<img src="images/pirate_party_logo.png"><h1>Pirate Proxy</h1>
+		<form action="javascript:doclick()">
+		http://
+		<input type="text" id="url" name="url">
+		<input type="button" onclick="doclick()" value="Arrrr!" />
+		</form>
+		<br>
+	</div>
+</body>
+</html>
