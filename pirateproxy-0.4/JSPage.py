@@ -3,7 +3,7 @@ import Util
 
 # Class used to parse and rewrite JS files and snippets
 class JSPage:
-	BLKSIZE=65536
+	BLKSIZE=4096
 
 	def __init__(self, config, ssl, reader, writer):
 		self.config = config
